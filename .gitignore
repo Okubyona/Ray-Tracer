@@ -1,0 +1,6 @@
+#Compiler Generated Object Files
+    *.o
+
+#Executables
+    *.exe
+    *.out
