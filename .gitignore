@@ -1,5 +1,3 @@
-#scons
-.sconsign.dblite
 
 #Compiler Generated Object Files
 *.o
@@ -7,6 +5,13 @@
 #Executables
 *.exe
 *.out
+ray_tracer
+
+#Grading Directory
+grading/
 
 #Outputs
 *.png
+
+#scons
+.sconsign.dblite
