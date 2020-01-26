@@ -1,6 +1,12 @@
+#scons
+.sconsign.dblite
+
 #Compiler Generated Object Files
-    *.o
+*.o
 
 #Executables
-    *.exe
-    *.out
+*.exe
+*.out
+
+#Outputs
+*.png
