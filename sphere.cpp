@@ -36,13 +36,13 @@ Hit Sphere::Intersection(const Ray& ray, int part) const
     if (t_1 < t_2 && t_1 >= small_t) {
         intersection.dist = t_1;
         intersection.object = this;
-        intersection.part = part;
+
     }
 
     else if (t_2 < t_1 && t_2 >= small_t) {
-        intersection.dist = t_1;
+        intersection.dist = t_2;
         intersection.object = this;
-        intersection.part = part;
+
     }
 
     return intersection;
@@ -51,8 +51,8 @@ Hit Sphere::Intersection(const Ray& ray, int part) const
 vec3 Sphere::Normal(const vec3& point, int part) const
 {
     vec3 normal;
-    TODO; // compute the normal direction
-    return normal;
+    normal = point - center;
+    return normal.normalized();
 }
 
 Box Sphere::Bounding_Box(int part) const
