@@ -1,6 +1,7 @@
 
 #Compiler Generated Object Files
 *.o
+*.stackdump
 
 #Executables
 *.exe
