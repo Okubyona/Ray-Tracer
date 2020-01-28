@@ -38,6 +38,7 @@ Hit Render_World::Closest_Intersection(const Ray& ray)
         // if intersect has an object, and its distance is >= small_t and
         // distance is less than min_t
         if ((intersect.object && intersect.dist >= small_t) && intersect.dist < min_t) {
+            min_t = intersect.dist;
             closestInt = intersect;
         }
     }
